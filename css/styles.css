@@ -1,0 +1,117 @@
+/*
+-------------------Color Pallete
+
+                  $primary: #11998e #01a9b4;
+                  $secondary: #38ef7d #87dfd6;
+                  $white: #fff;
+                  $gray: #9b9b9b #c3c3c3;
+ */
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  /* margin-top: 10px; */
+  margin: 1% 0;
+  width: auto;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #c3c3c3;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 15px 0 5px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  letter-spacing: 0.2em;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 5%;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color:#c3c3c3;
+  letter-spacing: 0.2em;
+
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #01a9b4;
+    font-weight:700;
+
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #01a9b4, #87dfd6);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+/* demo */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+
+  background-color:#222222;
+}
+
+
+.box-container{
+  /* padding: 50px; */
+  display: inline-block;
+  /* margin: 50px inherit; */
+  padding: 20% 0 0 0;
+}
+
+#footer{
+  color:#c3c3c3;
+  text-align: center;
+  padding: 10% 0 0 1%;
+  font-size: 0.8rem;
+
+}
+p{
+
+  font-family: 'ubuntu', sans-serif;
+  color:#c3c3c3;
+}
+a{
+  color:#c3c3c3;
+  font-size: 1rem;
+}
+a:hover{
+  color: #ffffff;
+}
+
+.social-icons{
+  margin: 10% 10% 10% 5%;
+}
