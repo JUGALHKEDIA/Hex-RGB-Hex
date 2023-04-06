@@ -1,2 +1,2 @@
 # Hex-RGB-Hex
--An interactive tool to for hex to rgb color conversion and vice versa
+Visit [Hex-RGB-Hex](https://jugalhkedia.github.io/Hex-RGB-Hex/) and experience the fun.
